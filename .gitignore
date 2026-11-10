@@ -1,0 +1,16 @@
+# Only the fix tooling and the notes are tracked. The game install itself is
+# proprietary and is never redistributed.
+/*
+!/.gitignore
+!/README.md
+!/AGENTS.md
+!/LEARNINGS.md
+!/FAMILY_TIME_LINUX_FIX.md
+!/PROP_FIX_REPORT.md
+!/linux-fix/
+
+# game code and build outputs inside linux-fix
+/linux-fix/pristine/Assembly-CSharp.dll
+**/bin/
+**/obj/
+**/out/
