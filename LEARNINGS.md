@@ -46,7 +46,7 @@ The save says the ledger is empty, while max density makes the spawn finder decl
 ### Unknown
 
 - Whether the kernel writes nothing, writes at a bad height (buried), or the copy to the ledger doesn't land.
-- Whether the same build has trees on native Windows. The shipped logs are the author's own (`C:/Users/Master-Donut/…`, RTX 2070 SUPER) and share the same message set as ours, so they prove nothing either way.
+- Whether the same build has trees on native Windows. The shipped logs are the author's own (`C:/Users/<author>/…`, RTX 2070 SUPER) and share the same message set as ours, so they prove nothing either way.
 
 ### Next step (not done)
 
@@ -306,7 +306,7 @@ comm -13 a b   # only in ours
 
 Findings:
 
-- `FamilyTime_Data/Logs/` ships the **author's own Windows runs** — `C:/Users/Master-Donut/Project Family/Builds/FamilyTime_Patreon-DX11/`, `NVIDIA GeForce RTX 2070 SUPER`. The GPU string is the tell.
+- `FamilyTime_Data/Logs/` ships the **author's own Windows runs** — `C:/Users/<author>/Project Family/Builds/FamilyTime_Patreon-DX11/`, `NVIDIA GeForce RTX 2070 SUPER`. The GPU string is the tell.
 - The only real message difference between his run and ours is `NotSupportedException: … GraphicsFence … does not support async compute` at `GAT.BufferRelayoutUtil.Update()`, 4 438 times in his session, never in ours.
 - That exception fires when `SystemInfo.supportsAsyncCompute == false`. **Wine reports the capability differently**, so "no exception here" means "different code path", not "healthy".
 - Known harmless noise: `FloodPathRequest … has no flood group`, `CoarseSearch queue exceeded fail threshold`, `Proton: Error while copying … amdxcffx64.dll`, `GarbageCollector disposing of ComputeBuffer`, `ArgumentNullException … AsyncGPUReadback` in `PropChunkManager.OnDestroy`.

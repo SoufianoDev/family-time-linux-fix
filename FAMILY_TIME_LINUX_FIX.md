@@ -187,7 +187,7 @@ Steam cost ~350 MB of RAM before the game even started, on a machine where that 
 
 ```sh
 #!/bin/sh
-GAME_DIR="$HOME/SoufianoDev/FamilyTime_Patreon-DX11-Build37"
+GAME_DIR="$HOME/Games/FamilyTime_Patreon-DX11-Build37"
 PROTON="$HOME/.local/share/Steam/steamapps/common/Proton 11.0/proton"
 
 export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME/.local/share/Steam"
@@ -205,9 +205,9 @@ Type=Application
 Version=1.0
 Name=Family Time
 Comment=Launch Family Time through Proton
-Exec=/home/soufiano/.local/bin/family-time
-Path=/home/soufiano/SoufianoDev/FamilyTime_Patreon-DX11-Build37
-Icon=/home/soufiano/.local/share/icons/hicolor/512x512/apps/family-time.png
+Exec=$HOME/.local/bin/family-time
+Path=$HOME/Games/FamilyTime_Patreon-DX11-Build37
+Icon=$HOME/.local/share/icons/hicolor/512x512/apps/family-time.png
 Terminal=false
 Categories=Game;
 StartupNotify=false

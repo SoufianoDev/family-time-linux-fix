@@ -12,12 +12,17 @@ Three separate defects, all fixed in place and all reversible:
 
 Plus a Steam-free launcher (`proton run` against the existing Steam prefix).
 
+## Disclaimer
+
+Unofficial and independent. Not affiliated with, authorised, sponsored or endorsed by the developer or publisher of Family Time. This repository contains **no game files** — no executables, assets, shaders, managed assemblies or save files — and distributes nothing that could substitute for owning the game. The patches modify the copy of the game you already have, on your own machine, at your own risk. Report problems with the patch here, not to the developer.
+
+Only this repository's own code and text are licensed, under the [MIT license](LICENSE). "Family Time" and all game content remain the property of their respective owners.
+
 ## Documents
 
 - [`FAMILY_TIME_LINUX_FIX.md`](FAMILY_TIME_LINUX_FIX.md) — full report for defects 1, 2 and the launcher, with evidence, commands and revert steps.
 - [`PROP_FIX_REPORT.md`](PROP_FIX_REPORT.md) — full report for the procedural props fix: replay measurements, root cause, verification, limits.
 - [`LEARNINGS.md`](LEARNINGS.md) — the traps, the IL/replay toolkit, and what did not work.
-- [`AGENTS.md`](AGENTS.md) — working rules for this project.
 
 ## The props fix
 
